@@ -122,23 +122,15 @@ void Course::displayCourseInfo() {
     cout << "Course: " << courseName << " Code: " << courseCode << "Max students: " << maxStudents << " Current Students " << currentStudents << endl;
 }
 
-
-
-
-
-
 void Course::setCourseCode(string courseCode) {
     this->courseCode = courseCode;
 }
 
-
-
-
-
-
-
-
 int main() {
-
-
+Course c = {"CS101", "Introduction to Programming", 3, 0};
+c.displayCourseInfo();
+    Person p = {"Omar Nabil", 2202};
+    cout << "Currently enrolled: ";
+    p.display();
+    cout << endl;
 }
